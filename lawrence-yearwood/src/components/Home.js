@@ -57,13 +57,16 @@ function Home() {
         <MDBFooter className='bg-dark text-center text-white'>
           <MDBContainer className='p-4 pb-0'>
             <section className='mb-4'>
-              <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+              {/* Need to insert email address */}
+              <MDBBtn outline color="light" floating className='m-1' href='mailto: yourname@email.com' role='button'>
                 <MDBIcon far icon='envelope' />
               </MDBBtn>
-              <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+              {/* Need to insert a telephone number */}
+              <MDBBtn outline color="light" floating className='m-1' href='tel:1234567890' role='button'>
                 <MDBIcon fas icon='phone' />
               </MDBBtn>
-              <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+              {/* Need to insert a link to the linkedin page */}
+              <MDBBtn outline color="light" floating className='m-1' href='https://www.linkedin.com/' target="_blank" role='button'>
                 <MDBIcon fab icon='linkedin' />
               </MDBBtn>
             </section>
