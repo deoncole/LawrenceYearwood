@@ -3,6 +3,7 @@ import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import logo from '../assets/ly-logo.png'
+import {MDBFooter, MDBContainer, MDBIcon, MDBBtn} from 'mdb-react-ui-kit'
 
 function Home() {
     return (
@@ -30,6 +31,8 @@ function Home() {
                 </Nav>
             </Container>          
         </Navbar>
+
+        {/* Start of mid nav section */}
         <Nav className='justify-content-center'>
           <NavDropdown title="Virtual CFO" id="basic-nav-dropdown">
             <NavDropdown.Item href='#action/1.1'>Financial Modeling</NavDropdown.Item>
@@ -49,7 +52,27 @@ function Home() {
             <NavDropdown.Item href='#action/4.1'>Coming Soon</NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        </>
+
+        {/* Start of Footer */}
+        <MDBFooter className='bg-dark text-center text-white'>
+          <MDBContainer className='p-4 pb-0'>
+            <section className='mb-4'>
+              <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                <MDBIcon far icon='envelope' />
+              </MDBBtn>
+              <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                <MDBIcon fas icon='phone' />
+              </MDBBtn>
+              <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                <MDBIcon fab icon='linkedin' />
+              </MDBBtn>
+            </section>
+          </MDBContainer>
+          <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+            © 2022 Copyright Lawrence Yearwood, LLC
+          </div>
+        </MDBFooter>
+      </>
     );
 }
 
