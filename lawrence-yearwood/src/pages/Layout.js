@@ -1,11 +1,9 @@
-import { Container } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Outlet, Link} from 'react-router-dom'
 import logo from '../assets/ly-logo.png'
 import {MDBFooter, MDBContainer, MDBIcon, MDBBtn} from 'mdb-react-ui-kit'
 
-function Home() {
+function Layout() {
     return (
       <>
       
@@ -53,6 +51,9 @@ function Home() {
           </NavDropdown>
         </Nav>
 
+        {/* Spot to render the selected route */}
+        <Outlet/>
+
         {/* Start of Footer */}
         <MDBFooter className='bg-dark text-center text-white'>
           <MDBContainer className='p-4 pb-0'>
@@ -79,4 +80,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Layout;

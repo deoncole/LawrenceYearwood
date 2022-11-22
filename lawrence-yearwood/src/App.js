@@ -1,9 +1,9 @@
 import './App.css';
-import Home from './components/Home';
+import Layout from './pages/Layout';
 
 function App() {
   return (
-    <Home/>
+    <Layout/>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
