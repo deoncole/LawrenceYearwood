@@ -3,13 +3,13 @@ import { Outlet, Link} from 'react-router-dom'
 import logo from '../assets/ly-logo.png'
 import {MDBFooter, MDBContainer, MDBIcon, MDBBtn} from 'mdb-react-ui-kit'
 
-function Layout() {
+function Layout () {
     return (
       <>
       
         <Navbar expand='lg'>
             <Container>
-                <Navbar.Brand href='#home' className='ml-auto'>
+                <Navbar.Brand href='/' className='ml-auto'>
                     <img 
                         src={logo}
                         width='200'

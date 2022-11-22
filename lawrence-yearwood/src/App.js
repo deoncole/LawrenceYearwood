@@ -1,9 +1,18 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <Layout/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    // <Layout/>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
