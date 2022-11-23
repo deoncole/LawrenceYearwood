@@ -12,7 +12,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path='financial_modeling' element={<FinancialMod />}/>
-          <Route path='ficancial_strategy' element={<FinancialStrat />}/>
+          <Route path='financial_strategy' element={<FinancialStrat />}/>
         </Route>
       </Routes>
     </BrowserRouter>

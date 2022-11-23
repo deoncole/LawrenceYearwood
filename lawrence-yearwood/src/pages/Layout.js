@@ -34,7 +34,7 @@ function Layout () {
         <Nav className='justify-content-center'>
           <NavDropdown title="Virtual CFO" id="basic-nav-dropdown">
             <NavDropdown.Item href='/financial_modeling'>Financial Modeling</NavDropdown.Item>
-            <NavDropdown.Item href='/ficancial_strategy'>Financial Strategy</NavDropdown.Item>
+            <NavDropdown.Item href='/financial_strategy'>Financial Strategy</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Virtual Controllership" id="basic-nav-dropdown">
             <NavDropdown.Item href='#action/2.1'>Cash Management</NavDropdown.Item>
