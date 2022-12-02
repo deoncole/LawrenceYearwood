@@ -1,19 +1,19 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Outlet, Link} from 'react-router-dom'
-import logo from '../assets/ly-logo.png'
+import logo from '../assets/ly-logo-transparent.png'
 import {MDBFooter, MDBContainer, MDBIcon, MDBBtn} from 'mdb-react-ui-kit'
 
 function Layout () {
     return (
       <>
       
-        <Navbar expand='lg'>
+        <Navbar bg='light' expand='lg'>
             <Container>
                 <Navbar.Brand href='/' className='ml-auto'>
                     <img 
                         src={logo}
-                        width='200'
-                        height='200'
+                        width='100'
+                        height='100'
                         className='d-inline-block align-top'
                         alt='Lawrence Yearwood Logo'
                     />
